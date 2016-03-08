@@ -40,7 +40,7 @@ navs:
   #   style: warning
 
 formspree:
-  action_email: sales@appgain.com
+  action_email: sales@appgain.co
   message:
     success: Your Message was Sent successfully
     error: Something went wrong please try again later
