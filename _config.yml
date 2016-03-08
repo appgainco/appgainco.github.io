@@ -44,3 +44,5 @@ formspree:
   message:
     success: Your Message was Sent successfully
     error: Something went wrong please try again later
+
+google_analytics: UA-74855128-1
