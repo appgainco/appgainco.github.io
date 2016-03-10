@@ -170,6 +170,7 @@
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
+  var formspree_endpoint = 'sales+website@appgain.io';
   $('form#contact-form').submit(function(e) {
 
     // return false so form submits through jQuery rather than reloading page.
@@ -181,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     $.ajax({
-      url: "//formspree.io/sales@appgain.co",
+      url: '//formspree.io/'+formspree_endpoint,
       method: "POST",
       data: data,
       dataType: "json",
@@ -206,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function(){
           .addClass('fa-check');
 
         $('form#contact-form .alert span')
-          .text('&nbsp;&nbsp;Your Message was Sent successfully');
+          .text('  Your Message was Sent successfully');
 
         $('form#contact-form .alert')
           .addClass('alert-success')
@@ -228,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function(){
           .addClass('fa-exclamation-triangle');
 
         $('form#contact-form .alert span')
-          .text('&nbsp;&nbsp;Something went wrong please try again later');
+          .text('  Something went wrong please try again later');
 
         $('form#contact-form .alert')
           .addClass('alert-danger')
