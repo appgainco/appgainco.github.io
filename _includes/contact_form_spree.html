@@ -47,6 +47,7 @@
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(){
+  var formspree_endpoint = '{{site.formspree.action_email}}';
   $('form#contact-form').submit(function(e) {
 
     // return false so form submits through jQuery rather than reloading page.
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     $.ajax({
-      url: "//formspree.io/{{site.formspree.action_email}}",
+      url: '//formspree.io/'+formspree_endpoint,
       method: "POST",
       data: data,
       dataType: "json",
