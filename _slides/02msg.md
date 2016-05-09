@@ -2,10 +2,12 @@
 layout: slides/full_bg_img
 background:
   overlay: '#777'
-  image: "assets/images/bg/hero_1.jpg"
+  image: "assets/images/bg/ecom.jpg"
 ---
 
 
-# How we work?
+# Need E-commerce App?
 
-#### Quick – Confidential – Quality <br/> Transparency – Measurement  – Cost-Efficacy
+# App As a Service
+
+#### NATIVE – WordPress CMS – From 5000 AED only

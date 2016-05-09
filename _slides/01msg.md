@@ -1,7 +1,11 @@
 ---
 layout: slides/full_bg_img
-header: Mobilizing Your Business<br/> is Our Mission
 background:
   overlay: '#999'
-  image: "/assets/images/bg/apple-iphone-technology-white.jpg"
+  image: "/assets/images/bg/marketing_service.jpg"
 ---
+
+
+<h2 class="lightbox"> Looking for Mobile </h2>
+<h2 class="lightbox"> Marketing Service ? </h2>
+<h1 class="lightbox"> Appgain.io </h1>

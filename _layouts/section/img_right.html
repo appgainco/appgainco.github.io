@@ -1,12 +1,19 @@
 <section class="p-b-60 p-t-60" id="notifications">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 !col-sm-offset-1 p-t-50 sm-p-t-0">
+      <div class="col-sm-12 col-md-6 !col-sm-offset-1 p-t-50 sm-p-t-0">
         {{content}}
       </div>
-      <div class="col-sm-6" style="overflow: hidden; {%if page.images.section.height%}height:{{page.images.section.height}}px;{%endif%}zoom:-0.5">
-        <img src="{{page.images.section.url}}" class="image-responsive !image-responsive-width !sm-image-responsive-height" alt="{{page.images.section.alt || page.title }}">
+      <div class="col-sm-12 col-md-6" style="overflow: hidden; {%if page.images.section.height%}height:{{page.images.section.height}}px;{%endif%}zoom:-0.5">
+        <img
+          src="{{page.images.section.url}}"
+          class="!-image-responsive responsify-img"
+          alt="{{page.images.section.alt || page.title }}"
+          data-focus-left="0.01" data-focus-top="0.01"
+          data-focus-right="0.99" data-focus-bottom="0.99"
+        >
       </div>
+
     </div>
   </div>
 </section>

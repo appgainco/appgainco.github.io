@@ -9,9 +9,8 @@
             <div class="m-t-5">
               <ul class="no-style fs-12 no-padding no-margin font-arial ">
                 <li class="inline no-padding"><a href="/contact-us/" class="text-white  link p-r-10">Contact Us</a></li>
-                <li class="inline no-padding"><a href="http://appgain.io" class="text-white  link p-r-10">Appgain</a></li>
-                <li class="inline no-padding"><a href="http://smartlink.appgain.io" class="text-white  link p-r-10">Smartlink</a></li>
-                <li class="inline no-padding"><a href="http://ikhair.net" class="text-white  link p-r-10">iKhair</a></li>
+                <li class="inline no-padding"><a href="http://appgain.io" class="text-white  link p-r-10">Mobile Marketing service</a></li>
+                <li class="inline no-padding"><a href="http://ikhair.net" class="text-white  link p-r-10">Mobile Donation service</a></li>
               </ul>
             </div>
           </div>
@@ -41,9 +40,8 @@
         <img src="{%if site.baseurl%}{{site.baseurl}}{%endif%}/assets/images/appgain-logo.png" class="logo inline m-r-50" alt="">
         <div class="m-t-10 inline">
           <ul class="no-style fs-11 no-padding font-arial">
-            <li class="inline no-padding"><a href="http://appgain.io" class=" text-master p-l-15 p-r-15 b-r b-grey">Appgain</a></li>
-            <li class="inline no-padding"><a href="http://smartlink.appgain.io" class=" text-master p-l-15 p-r-15 b-r b-grey">Smartlink</a></li>
-            <li class="inline no-padding"><a href="http://ikhair.net" class=" text-master p-l-15 p-r-15 b-r b-grey">iKhair</a></li>
+            <li class="inline no-padding"><a href="http://appgain.io" class="text-white  link p-r-10">Mobile Marketing service</a></li>
+            <li class="inline no-padding"><a href="http://ikhair.net" class="text-white  link p-r-10">Mobile Donation service</a></li>
             <!-- <li class="inline no-padding"><a href="#" class=" text-master p-l-15 p-r-15 ">Support</a></li> -->
           </ul>
         </div>
@@ -75,11 +73,33 @@
 <!-- END PAGES LIB -->
 <!-- BEGIN YOUR CUSTOM JS -->
 <script type="text/javascript" src="{%if site.baseurl%}{{site.baseurl}}{%endif%}/assets/js/custom.js"></script>
+<script src="https://rawgit.com/briangonzalez/jquery.adaptive-backgrounds.js/master/src/jquery.adaptive-backgrounds.js" charset="utf-8"></script>
+<script src="https://rawgit.com/jamiebrittain/colourBrightness.js/master/jquery.colourbrightness.min.js" charset="utf-8"></script>
+<script src="https://rawgit.com/wentin/ResponsifyJS/master/responsify.min.js" charset="utf-8"></script>
 <!-- END PAGES LIB -->
 <style media="screen">
   .bg-master-dark { background-color: #1C9FDA; color: white; }
   .fw-5 {font-weight: 500;}
+  .light { color: #000 !important; }
+  .dark { color: #fff !important; }
 </style>
+
+<script>
+  $(document).ready(function(){
+    // Target your element
+    $('.lightbox').colourBrightness();
+    $.adaptiveBackground.run();
+  });
+
+  $(window).load(function() {
+    $('.responsify-img').responsify();
+  });
+
+  $(window).resize(function(){
+    $('.responsify-img').responsify();
+  })
+</script>
+
 
 <script>
  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

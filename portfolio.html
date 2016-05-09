@@ -39,32 +39,3 @@ services_header: >
     </section>
   {% endif %}
 {% endfor %}
-
-<!-- BEGIN FOOTER -->
-<section class="p-b-50 p-t-50 bg-master-lighter">
-  <div class="container p-b-50 p-t-50">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="text-center">
-        {% comment %}<img src="assets/images/Skewdriver.svg" alt="">{% endcomment %}
-        <div class="text-center">
-          <h1 class="text-black col-sm-12 p-b-10">
-            {{page.services_header}}
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- END FOOTER -->
-
-{% for app in site.services %}
-  {% if app.in_portfolio %}
-  <section class="p-b-85 p-t-75">
-    <div class="container">
-      <div class="row">
-        {{app}}
-      </div>
-    </div>
-  </section>
-  {% endif %}
-{% endfor %}
