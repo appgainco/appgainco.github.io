@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2  sm-p-t-20 ">
+    <h1 class="m-t-30 light">{{page.title}}</h1>
+
+    {% for brief_p in page.brief %}
+    <p>{{brief_p}}</p>
+    {% endfor %}
+
+    <div class="p-t-50">
+      {% for jobpost in page.job_post %}
+      <dl>
+        <dt class="block-title p-b-15 text-black">{{jobpost.title}}</i></dt>
+        <dd class="m-b-30">
+          {%if jobpost.description %}<p>{{jobpost.description}}</p>{%endif%}
+          {%if jobpost.bullet_points %}
+            <ul>
+            {% for bp in jobpost.bullet_points %}
+              <li>{{bp}}</li>
+            {% endfor %}
+            </ul>
+          {%endif%}
+        </dd>
+      </dl>
+      {% endfor %}
+      <dl >
+        <a href="{%if site.baseurl%}{{site.baseurl}}{%endif%}{{page.CTA.link|default:'#'}}" class="btn btn-{{page.CTA.style|default:'white'}} pull-right sm-pull-reset  m-l-20  sm-m-t-20">{{page.CTA.btn_title}}</a>
+        {% if page.CTA.brief %}
+        <p class="font-arial pull-right sm-pull-reset small hint-text sm-m-t-10 sm-no-padding">
+          {{page.CTA.brief}}
+        </p>
+        {% endif %}
+      </dl>
+    </div>
+  </div>
+</div>

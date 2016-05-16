@@ -25,6 +25,7 @@ collections:
   - services
   - portfolio
   - testimonials
+  - jobs
 
 navs:
   - label: Home
