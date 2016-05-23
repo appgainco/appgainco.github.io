@@ -34,6 +34,8 @@ navs:
     href: /services/
   - label: Portfolio
     href: /portfolio/
+  - label: Blog
+    href: //blog.appgain.co
   - label: Contact Us
     href: /contact-us/
   # - label: We Are Hiring
